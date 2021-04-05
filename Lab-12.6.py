@@ -2,7 +2,7 @@ import cv2 as cv
 
 face_cascade = cv.CascadeClassifier('haarcascade_frontalface_default.xml')
 eye_cascade = cv.CascadeClassifier('haarcascade_eye.xml')
-cap = cv.VideoCapture(0)
+cap = cv.VideoCapture(1)
 
 while (cv.waitKey(1) == -1):
     success, frame = cap.read()
